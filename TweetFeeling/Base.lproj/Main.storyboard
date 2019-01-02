@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,73 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TweetFeeling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJ1-6B-upr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter @ Twitter handle to see how people feel..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zkq-HS-p4a">
+                                        <rect key="frame" x="15" y="507" width="345" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="waQ-Oc-fmU"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6c-Iw-eVE">
+                                        <rect key="frame" x="15" y="577" width="345" height="40"/>
+                                        <color key="backgroundColor" red="0.6458670661" green="0.2749317725" blue="0.28162977389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="fMf-wM-aWH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Predict">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOz-PG-62O">
+                                        <rect key="frame" x="139" y="35" width="97" height="437"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="90"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.55156258319999996" blue="0.14288530830000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="zkq-HS-p4a" firstAttribute="leading" secondItem="BJ1-6B-upr" secondAttribute="leading" constant="15" id="CQT-lo-Ud3"/>
+                                    <constraint firstItem="oOz-PG-62O" firstAttribute="top" secondItem="BJ1-6B-upr" secondAttribute="top" constant="35" id="HMB-jK-YLq"/>
+                                    <constraint firstAttribute="bottom" secondItem="j6c-Iw-eVE" secondAttribute="bottom" constant="50" id="QW8-zQ-2Gj"/>
+                                    <constraint firstItem="j6c-Iw-eVE" firstAttribute="top" secondItem="zkq-HS-p4a" secondAttribute="bottom" constant="30" id="R8H-Ph-jHu"/>
+                                    <constraint firstAttribute="trailing" secondItem="zkq-HS-p4a" secondAttribute="trailing" constant="15" id="d2g-T2-RrQ"/>
+                                    <constraint firstItem="zkq-HS-p4a" firstAttribute="top" secondItem="oOz-PG-62O" secondAttribute="bottom" constant="35" id="gic-B3-lhZ"/>
+                                    <constraint firstItem="j6c-Iw-eVE" firstAttribute="leading" secondItem="BJ1-6B-upr" secondAttribute="leading" constant="15" id="mm8-cy-Rjg"/>
+                                    <constraint firstAttribute="trailing" secondItem="j6c-Iw-eVE" secondAttribute="trailing" constant="15" id="z70-dZ-prB"/>
+                                    <constraint firstItem="oOz-PG-62O" firstAttribute="centerX" secondItem="BJ1-6B-upr" secondAttribute="centerX" id="z8W-eP-AdP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BJ1-6B-upr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3aw-qx-XPw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BJ1-6B-upr" secondAttribute="bottom" id="IDS-Ig-LdJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BJ1-6B-upr" secondAttribute="trailing" id="S4E-oE-ot6"/>
+                            <constraint firstItem="BJ1-6B-upr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="nX9-HV-d1q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
