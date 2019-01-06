@@ -44,6 +44,9 @@
                                                 <integer key="value" value="15"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="predictTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAs-be-ZER"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOz-PG-62O">
                                         <rect key="frame" x="139" y="35" width="97" height="437"/>
@@ -75,6 +78,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="BJ1-6B-upr" id="Tnd-rn-wFp"/>
+                        <outlet property="feelLabel" destination="oOz-PG-62O" id="FHa-ie-ZGD"/>
+                        <outlet property="textField" destination="zkq-HS-p4a" id="N70-i0-PMz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

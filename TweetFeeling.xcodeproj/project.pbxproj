@@ -13,7 +13,68 @@
 		032C8D6E21DCCB5700AB3F6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032C8D6D21DCCB5700AB3F6C /* Assets.xcassets */; };
 		032C8D7121DCCB5700AB3F6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032C8D6F21DCCB5700AB3F6C /* LaunchScreen.storyboard */; };
 		032C8D7921DCCCE900AB3F6C /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 032C8D7821DCCCE900AB3F6C /* TweetSentimentClassifier.mlmodel */; };
+		032C8DA921E20DCA00AB3F6C /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 032C8DA221E20D9600AB3F6C /* SwifteriOS.framework */; };
+		032C8DAA21E20DCA00AB3F6C /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 032C8DA221E20D9600AB3F6C /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		032C8D9F21E20D9600AB3F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032C8D9721E20D9600AB3F6C /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		032C8DA121E20D9600AB3F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032C8D9721E20D9600AB3F6C /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		032C8DA321E20D9600AB3F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032C8D9721E20D9600AB3F6C /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		032C8DA521E20D9600AB3F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032C8D9721E20D9600AB3F6C /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		032C8DA721E20D9600AB3F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032C8D9721E20D9600AB3F6C /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+		032C8DAB21E20DCA00AB3F6C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032C8D9721E20D9600AB3F6C /* Swifter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9F50ED1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		032C8D9621E20A3300AB3F6C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				032C8DAA21E20DCA00AB3F6C /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		032C8D6321DCCB5500AB3F6C /* TweetFeeling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetFeeling.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +85,7 @@
 		032C8D7021DCCB5700AB3F6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		032C8D7221DCCB5700AB3F6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		032C8D7821DCCCE900AB3F6C /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
+		032C8D9721E20D9600AB3F6C /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				032C8DA921E20DCA00AB3F6C /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +103,7 @@
 		032C8D5A21DCCB5400AB3F6C = {
 			isa = PBXGroup;
 			children = (
+				032C8D9721E20D9600AB3F6C /* Swifter.xcodeproj */,
 				032C8D6521DCCB5500AB3F6C /* TweetFeeling */,
 				032C8D6421DCCB5500AB3F6C /* Products */,
 			);
@@ -67,6 +131,18 @@
 			path = TweetFeeling;
 			sourceTree = "<group>";
 		};
+		032C8D9821E20D9600AB3F6C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				032C8DA021E20D9600AB3F6C /* SwifterDemoiOS.app */,
+				032C8DA221E20D9600AB3F6C /* SwifteriOS.framework */,
+				032C8DA421E20D9600AB3F6C /* SwifterMac.framework */,
+				032C8DA621E20D9600AB3F6C /* SwifterDemoMac.app */,
+				032C8DA821E20D9600AB3F6C /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,10 +153,12 @@
 				032C8D5F21DCCB5500AB3F6C /* Sources */,
 				032C8D6021DCCB5500AB3F6C /* Frameworks */,
 				032C8D6121DCCB5500AB3F6C /* Resources */,
+				032C8D9621E20A3300AB3F6C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				032C8DAC21E20DCA00AB3F6C /* PBXTargetDependency */,
 			);
 			name = TweetFeeling;
 			productName = TweetFeeling;
@@ -113,12 +191,56 @@
 			mainGroup = 032C8D5A21DCCB5400AB3F6C;
 			productRefGroup = 032C8D6421DCCB5500AB3F6C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 032C8D9821E20D9600AB3F6C /* Products */;
+					ProjectRef = 032C8D9721E20D9600AB3F6C /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				032C8D6221DCCB5500AB3F6C /* TweetFeeling */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		032C8DA021E20D9600AB3F6C /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 032C8D9F21E20D9600AB3F6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		032C8DA221E20D9600AB3F6C /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 032C8DA121E20D9600AB3F6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		032C8DA421E20D9600AB3F6C /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 032C8DA321E20D9600AB3F6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		032C8DA621E20D9600AB3F6C /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 032C8DA521E20D9600AB3F6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		032C8DA821E20D9600AB3F6C /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 032C8DA721E20D9600AB3F6C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		032C8D6121DCCB5500AB3F6C /* Resources */ = {
@@ -145,6 +267,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		032C8DAC21E20DCA00AB3F6C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwifteriOS;
+			targetProxy = 032C8DAB21E20DCA00AB3F6C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		032C8D6A21DCCB5500AB3F6C /* Main.storyboard */ = {
@@ -285,6 +415,7 @@
 		032C8D7621DCCB5700AB3F6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7Z3QND73W;
@@ -303,6 +434,7 @@
 		032C8D7721DCCB5700AB3F6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C7Z3QND73W;
