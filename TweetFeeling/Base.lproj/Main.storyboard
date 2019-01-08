@@ -48,7 +48,7 @@
                                             <action selector="predictTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAs-be-ZER"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🙂" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOz-PG-62O">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😴" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOz-PG-62O">
                                         <rect key="frame" x="139" y="35" width="97" height="437"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                         <nil key="textColor"/>
@@ -79,7 +79,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="backgroundView" destination="BJ1-6B-upr" id="Tnd-rn-wFp"/>
                         <outlet property="feelLabel" destination="oOz-PG-62O" id="FHa-ie-ZGD"/>
                         <outlet property="textField" destination="zkq-HS-p4a" id="N70-i0-PMz"/>
                     </connections>
